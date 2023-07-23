@@ -258,6 +258,40 @@ select:-webkit-autofill:focus {
 }
 
 
+/* SECTION */
+.section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.section__info {
+    width: 100%;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.section__title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 52px;
+    letter-spacing: -0.1px;
+    color: var(--text-color);
+}
+
+.section__description {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: normal;
+}
+
+
 /* SITE-HEADER */
 .site-header {
     padding-top: 48px;
