@@ -125,7 +125,6 @@ select:-webkit-autofill:focus {
 }
 
 
-
 /* CONTAINER */
 .container {
     width: 100%;
@@ -140,6 +139,64 @@ select:-webkit-autofill:focus {
 /* MAIN CONTENT */
 .main-content {
     flex-grow: 1;
+}
+
+
+/* BUTTON */
+.button {
+    display: inline-block;
+    padding: 8px 22px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.25px;
+    background-color: var(--light-bg);
+    color: var(--text-color-75);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #fff;
+    border-color: #5b6074;
+    transition: background-color 0.4s ease,
+        color 0.4s ease,
+        border-color 0.4s ease;
+}
+
+.button:active {
+    opacity: 0.6;
+}
+
+.button--red {
+    background-color: var(--red-color);
+    color: #fff;
+}
+
+.button--red:hover {
+    background-color: #fff;
+    color: var(--red-color);
+    border-color: var(--red-color);
+}
+
+.button--blue {
+    background-color: var(--blue-color);
+    color: #fff;
+}
+
+.button--blue:hover {
+    background-color: #fff;
+    color: var(--blue-color);
+    border-color: var(--blue-color);
+}
+
+.button--block {
+    display: block;
+    width: 100%;
 }
 
 
