@@ -287,6 +287,65 @@ select:-webkit-autofill:focus {
     letter-spacing: 1.5px;
 }
 
+
+/* HERO */
+.hero {
+    padding-top: 66px;
+    padding-bottom: 105px;
+    background-image: url(../img/blue-pill-bg.svg);
+    background-position: left calc(50% + 705px) top 200px;
+    background-repeat: no-repeat;
+}
+
+.hero__container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.hero__content {
+    flex-shrink: 0;
+    padding-top: 66px;
+    margin-right: 65px;
+    width: 100%;
+    max-width: 540px;
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -0.15px;
+    color: var(--text-color);
+}
+
+.hero__description {
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: normal;
+}
+
+.hero__actions {
+    display: flex;
+}
+
+.hero__actions-item:not(:last-child) {
+    margin-right: 16px;
+}
+
+.hero__img {
+    flex-shrink: 0;
+    width: 578px;
+    height: 385px;
+    object-fit: contain;
+    border-radius: 25px;
+    box-shadow: 0px 30px 40px 0px rgba(47, 59, 129, 0.20);
+}
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
