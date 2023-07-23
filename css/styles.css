@@ -1,6 +1,8 @@
 /* CUSTOM PROPS */
 :root {
     --text-color: #242a45;
+    --text-color-75: rgba(36, 42, 69, 0.75);
+    --text-color-50: rgba(36, 42, 69, 0.5);
     --red-color: #fa5959;
     --blue-bg: #5267df;
     --dark-bg: #242a45;
@@ -74,7 +76,7 @@ body {
     font-size: 16px;
     line-height: 36px;
     letter-spacing: 0.15px;
-    color: var(--text-color);
+    color: var(--text-color-75);
     background-color: #fff;
 }
 
