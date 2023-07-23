@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookmark</title>
-
+    
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -28,7 +28,7 @@
             <a class="site-header__button button button--red" href="#">Login</a>
         </div>
     </header>
-
+    
     <!-- MAIN-CONTENT -->
     <main class="main-content">
         <div class="hero">
@@ -41,11 +41,11 @@
                         <a class="hero__actions-item button" href="#">Get it on Firefox</a>
                     </div>
                 </div>
-
+                
                 <img class="hero__img" src="img/hero-img.svg" alt="Bookmark manager illustration" width="578px" height="385px">
             </div>
         </div>
-
+        
         <!-- FEATURES -->
         <section class="features section">
             <div class="container">
@@ -53,22 +53,63 @@
                     <h2 class="section__title">Features</h2>
                     <p class="section__description">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
                 </div>
+                
+                <!-- TABS -->
                 <div class="tabs">
+                    <!-- TABS-LIST -->
                     <ul class="tabs__list">
                         <li class="tabs__item tabs__item--active">
-                            <a class="tabs__link" href="#">Simple Bookmarking</a>
+                            <a class="tabs__link" href="#feature-simple-bookmarking">Simple Bookmarking</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" href="#">Speedy Searching</a>
+                            <a class="tabs__link" href="#feature-speedy-searching">Speedy Searching</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" href="#">Easy Sharing</a>
+                            <a class="tabs__link" href="#feature-easy-sharing">Easy Sharing</a>
                         </li>
                     </ul>
                 </div>
             </div>
+            
+            <!-- TABS-PANELS -->
+            <div class="tabs__panels">
+                <div class="container">
+                    <div class="tabs__panel tabs__panel--active" id="feature-simple-bookmarking">
+                        <section class="feature-tab-panel">
+                            <img class="feature-tab-panel__img" src="img/features-simple-bookmarking-illustration.svg" alt="bookmark manager illustration" width="536" height="346">
+                            <div class="feature-tab-panel__content">
+                                <h3 class="feature-tab-panel__title">Bookmark in one click</h3>
+                                <p class="feature-tab-panel__description">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                                <a class="button button--blue" href="#">More Info</a>
+                            </div>
+                        </section>
+                    </div>
+                    
+                    <div class="tabs__panel" id="feature-speedy-searching">
+                        <section class="feature-tab-panel">
+                            <img class="feature-tab-panel__img" src="img/feature-speedy-searching-illustration.svg" alt="bookmark speedy searching illustration" width="468" height="393">
+                            <div class="feature-tab-panel__content">
+                                <h3 class="feature-tab-panel__title">Intelligent search</h3>
+                                <p class="feature-tab-panel__description">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                                <a class="button button--blue" href="#">More Info</a>
+                            </div>
+                        </section>
+                    </div>
+                    
+                    <div class="tabs__panel" id="feature-easy-sharing">
+                        <section class="feature-tab-panel">
+                            <img class="feature-tab-panel__img" src="img/feature-easy-sharing-illustration.svg" alt="bookmark easy sharing illustration" width="440" height="380">
+                            <div class="feature-tab-panel__content">
+                                <h3 class="feature-tab-panel__title">Share your bookmarks</h3>
+                                <p class="feature-tab-panel__description">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                                <a class="button button--blue" href="#">More Info</a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
         </section>
-
+        
         <!-- DOWNLOAD-EXTENSION -->
         <section class="section">
             <div class="container">
@@ -78,7 +119,7 @@
                 </div>
             </div>
         </section>
-
+        
         <!-- FAQ -->
         <section class="section">
             <div class="container">
@@ -89,8 +130,8 @@
             </div>
         </section>
     </main>
-
-
+    
+    
     <script src="js/main.js"></script>
 </body>
 </html>
