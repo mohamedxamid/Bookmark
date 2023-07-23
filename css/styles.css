@@ -200,6 +200,30 @@ select:-webkit-autofill:focus {
 }
 
 
+/* LOGO */
+.logo {
+    flex-shrink: 0;
+    display: block;
+    text-decoration: none;
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+.logo:active {
+    opacity: 0.6;
+}
+
+.logo__img {
+    display: block;
+    width: 148px;
+    height: 25px;
+    object-fit: contain;
+}
+
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
