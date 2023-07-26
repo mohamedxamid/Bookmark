@@ -374,7 +374,7 @@ select:-webkit-autofill:focus {
     opacity: 0.6;
 }
 
-.tabs__panels {
+.tabpanels {
     padding-top: 75px;
     padding-bottom: 165px;
     background-image: url(../img/blue-pill-bg.svg);
@@ -382,11 +382,11 @@ select:-webkit-autofill:focus {
     background-position: calc(50% - 580px) 156px;
 }
 
-.tabs__panel {
+.tabpanels__item {
     display: none;
 }
 
-.tabs__panel--active {
+.tabpanels__item--active {
     display: block;
 }
 
