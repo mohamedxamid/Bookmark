@@ -297,12 +297,24 @@ select:-webkit-autofill:focus {
 .feature-tab-panel {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .feature-tab-panel__img {
     margin-right: 30px;
     object-fit: contain;
+}
+
+.feature-tab-panel__img--bookmark-manager {
+    margin-right: 125px;
+}
+
+.feature-tab-panel__img--simple {
+    margin-right: 115px;
+}
+
+.feature-tab-panel__img--sharing {
+    margin-right: 145px;
 }
 
 .feature-tab-panel__content {
