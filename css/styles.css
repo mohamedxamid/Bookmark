@@ -386,6 +386,8 @@ select:-webkit-autofill:focus {
     opacity: 0.6;
 }
 
+
+/* TABPANELS */
 .tabpanels {
     padding-top: 75px;
     padding-bottom: 165px;
