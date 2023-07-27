@@ -1,24 +1,32 @@
+const modifiers = {
+    tabItemActive : 'tabs__item--active',
+    tabPanelItemActive: 'tabpanels__item--active',
+    accordionItemOpen: 'accordion__item--open'
+}
+
+
 const elsTabsItem = document.querySelectorAll('.tabs__item');
 const elsTabLink = document.querySelectorAll('.js-tab-link');
 const elsTabsPanel = document.querySelectorAll('.tabpanels__item');
+
 const elAccordion = document.querySelector('.accordion');
 const elsAccordionItem = document.querySelectorAll('.accordion__item');
 
 function deactivateTabsItem () {
     elsTabsItem.forEach(function (elTabsItem) {
-        elTabsItem.classList.remove('tabs__item--active');
+        elTabsItem.classList.remove(modifiers.tabItemActive);
     })
 }
 
 function deactivateTabsPanel () {
     elsTabsPanel.forEach(function (elTabsPanel) {
-        elTabsPanel.classList.remove('tabpanels__item--active');
+        elTabsPanel.classList.remove(modifiers.tabPanelItemActive);
     })
 }
 
 function closeAccordionItems () {
     elsAccordionItem.forEach(function (elAccordionItem) {
-        elAccordionItem.classList.remove('accordion__item--open');
+        elAccordionItem.classList.remove(modifiers.accordionItemOpen);
     })
 }
 
@@ -31,7 +39,7 @@ elsTabLink.forEach(function (elTabLink) {
         deactivateTabsItem();
         
         // Add active class to current tabs__item
-        elTabLink.parentElement.classList.add('tabs__item--active');
+        elTabLink.parentElement.classList.add(modifiers.tabItemActive);
         
         // Remove active class from tabs__panel elements
         deactivateTabsPanel();
@@ -40,7 +48,7 @@ elsTabLink.forEach(function (elTabLink) {
         // const elTargetPanel = document.querySelector(`#${elTabLink.href.split('#')[1]}`);
         const elTargetPanel = document.querySelector(elTabLink.dataset.tabTarget);
 
-        elTargetPanel.classList.add('tabpanels__item--active');
+        elTargetPanel.classList.add(modifiers.tabPanelItemActive);
     })
 })
 
@@ -52,8 +60,8 @@ if (elAccordion) {
             // item sectionni olib kevolaman
             elsAccordionItem.forEach(function (elAccordionItem) {
                 if(elAccordionItem === evt.target.closest('.accordion__item')) {
-                    !elAccordionItem.classList.contains('accordion__item--open') && closeAccordionItems();
-                    elAccordionItem.classList.toggle('accordion__item--open');
+                    !elAccordionItem.classList.contains(modifiers.accordionItemOpen) && closeAccordionItems();
+                    elAccordionItem.classList.toggle(modifiers.accordionItemOpen);
                 }
             })
         }
