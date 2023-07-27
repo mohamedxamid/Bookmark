@@ -589,6 +589,26 @@ select:-webkit-autofill:focus {
 }
 
 
+/* FAQ */
+.faq {
+    padding-bottom: 150px;
+}
+
+.faq__section-info {
+    margin-bottom: 56px;
+}
+
+.faq__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
