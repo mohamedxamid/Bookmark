@@ -1033,4 +1033,51 @@ only screen and (                min-resolution: 2dppx) {
         align-items: flex-end;
         flex-grow: 1;
     }
+
+    .hero {
+        padding-top: 40px;
+    }
+
+    .hero__container {
+        flex-direction: column-reverse;
+    }
+
+    .hero__content {
+        margin-right: 0;
+        padding-top: 94px;
+        text-align: center;
+    }
+
+    .hero__img {
+        width: 100%;
+        max-width: 313px;
+        height: 209px;
+    }
+
+    .hero__title {
+        margin-bottom: 16px;
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: -0.09px;
+    }
+
+    .hero__description {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .hero__actions {
+        flex-direction: column;
+    }
+
+    .hero__actions-item {
+        max-width: 100%;
+        /* max-width: 150px; */
+        padding: 10px 17px;
+    }
+
+    .hero__actions-item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
 }
