@@ -1138,4 +1138,12 @@ only screen and (                min-resolution: 2dppx) {
         font-size: 15px;
         line-height: 25px;
     }
+
+    .extensions__list {
+        justify-content: center;
+    }
+
+    .extensions__item:not(:first-child) {
+        margin-top: 40px;
+    }
 }
