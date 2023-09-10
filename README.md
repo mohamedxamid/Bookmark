@@ -6,3 +6,6 @@
 4. Zinaga o'xshab kartochkalarning pastga tushishi. nth-child() imkoniyati bilan
 5. Accordion
 6. input stili
+
+
+Responsive only for mobile
