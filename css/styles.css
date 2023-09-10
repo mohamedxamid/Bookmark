@@ -1182,4 +1182,34 @@ only screen and (                min-resolution: 2dppx) {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
+    .site-footer__container {
+        flex-direction: column;
+    }
+
+    .site-footer__logo {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .site-footer__sitenav {
+        margin-right: 0;
+    }
+
+    .sitenav__list {
+        flex-direction: column;
+        margin-bottom: 48px;
+        text-align: center;
+    }
+
+    .sitenav__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+
+    .sitenav--white .sitenav__link {
+        font-size: 15px;
+        line-height: 17px;
+        letter-spacing: 1.73px;
+    }
 }
