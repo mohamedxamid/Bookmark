@@ -1153,4 +1153,33 @@ only screen and (                min-resolution: 2dppx) {
         line-height: 30px;
         letter-spacing: 0.14px;
     }
+
+    .subscription__count-text {
+        font-size: 12px;
+        line-height: 40px;
+        letter-spacing: 4.62px;
+        margin-bottom: 0;
+    }
+
+    .subscription__title {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -0.08px;
+        margin-bottom: 32px;
+    }
+
+    .subscription__form {
+        flex-direction: column;
+    }
+
+    .subscription__field-wrapper {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .subscription__field {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
