@@ -1082,4 +1082,60 @@ only screen and (                min-resolution: 2dppx) {
         margin-right: 0;
         margin-bottom: 16px;
     }
+
+    .tabpanels {
+        padding-bottom: 75px;
+        background-size: 612px;
+        background-position: calc(50% - 184px) 97px;
+    }
+
+    .tabs__list {
+        flex-direction: column;
+        border-top: 1px solid rgba(73, 93, 207, 0.2);;
+    }
+
+    .tabs__item {
+        width: 100%;
+    }
+
+    .tabs__link {
+        padding-top: 20px;
+        padding-bottom: 16px;
+    }
+
+    .feature-tab-panel {
+        flex-direction: column;
+    }
+
+    .feature-tab-panel__img {
+        margin-bottom: 70px;
+    }
+
+    .feature-tab-panel__img--bookmark-manager {
+        margin-right: 0;
+    }
+
+    .feature-tab-panel__img--simple {
+        margin-right: 0;
+    }
+
+    .feature-tab-panel__img--sharing {
+        margin-right: 0;
+    }
+
+    .feature-tab-panel__content {
+        text-align: center;
+    }
+
+    .feature-tab-panel__title {
+        font-size: 24px;
+        line-height: 52px;
+        letter-spacing: -0.08px;
+        margin-bottom: 0;
+    }
+
+    .feature-tab-panel__description {
+        font-size: 15px;
+        line-height: 25px;
+    }
 }
