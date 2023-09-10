@@ -1036,6 +1036,8 @@ only screen and (                min-resolution: 2dppx) {
 
     .hero {
         padding-top: 40px;
+        background-position: left calc(50% + 170px) top 92px;
+        background-size: 577px;
     }
 
     .hero__container {
