@@ -1,9 +1,28 @@
 const modifiers = {
+    siteHeaderActive: "site-header--active",
+    sitenavActive: "site-header__sitenav-toggler--active",
     tabItemActive : 'tabs__item--active',
     tabPanelItemActive: 'tabpanels__item--active',
     accordionItemOpen: 'accordion__item--open'
 }
 
+const elSiteHeader = document.querySelector('.site-header');
+const elSitenavToggler = elSiteHeader.querySelector('.site-header__sitenav-toggler');
+const elSitenavTogglerClose = elSiteHeader.querySelector('.sitenav-menu__close');
+
+if (elSitenavToggler) {
+    elSitenavToggler.addEventListener('click', function () {
+        elSitenavToggler.classList.toggle(modifiers.sitenavActive);
+        elSiteHeader.classList.add(modifiers.siteHeaderActive);
+    })
+}
+
+if (elSitenavTogglerClose) {
+    elSitenavTogglerClose.addEventListener('click', function () {
+        elSitenavToggler.classList.toggle(modifiers.sitenavActive);
+        elSiteHeader.classList.remove(modifiers.siteHeaderActive);
+    })
+}
 
 const elsTabsItem = document.querySelectorAll('.tabs__item');
 const elsTabLink = document.querySelectorAll('.js-tab-link');
