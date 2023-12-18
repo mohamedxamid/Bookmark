@@ -481,14 +481,16 @@ select:-webkit-autofill:focus {
 }
 
 .accordion__item-content {
-    display: none;
-    padding-top: 19px;
-    padding-bottom: 29px;
+    height: 0px;
     color: var(--text-color-75);
+    opacity: 0;
+    transition: height 0.3s ease;
 }
 
 .accordion__item--open .accordion__item-content {
-    display: block;
+    padding-top: 19px;
+    padding-bottom: 29px;
+    opacity: 1;
 }
 
 .accordion__item-text {
@@ -591,6 +593,7 @@ select:-webkit-autofill:focus {
 
 .site-header__sitenav-toggler {
     display: none;
+    cursor: pointer;
 }
 
 
@@ -910,6 +913,7 @@ only screen and (                min-resolution: 2dppx) {
 
     .sitenav-menu__close {
         display: block;
+        cursor: pointer;
     }
 
     .site-header {

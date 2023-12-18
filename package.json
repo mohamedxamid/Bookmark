@@ -1,0 +1,20 @@
+{
+  "name": "bookmark",
+  "version": "1.0.0",
+  "description": "1. Tabs\r 2. Tab list dagi tab item ning pastdagi border ni boshqacha stil bilan qilgandim. Item dagi link da data tab target bor.\r 3. Tab panels\r 4. Zinaga o'xshab kartochkalarning pastga tushishi. nth-child() imkoniyati bilan\r 5. Accordion\r 6. input stili",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "json-server --watch database/db.json"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "Muhammad Xamidov",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^0.17.4"
+  }
+}

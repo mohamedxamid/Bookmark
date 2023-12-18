@@ -6,6 +6,30 @@ const modifiers = {
     accordionItemOpen: 'accordion__item--open'
 }
 
+const form = document.querySelector('form.subscription__form')
+
+if (form) {
+    form.addEventListener('submit', (evt) => {
+        evt.preventDefault()
+
+        const formData = new FormData(form)
+        const json = JSON.stringify(Object.fromEntries(formData.entries()))
+
+        fetch('http://localhost:3000/requests', {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: json,
+        })
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(err => console.log(err))
+        .finally(() => form.reset())
+    })
+}
+
+
 const elSiteHeader = document.querySelector('.site-header');
 const elSitenavToggler = elSiteHeader.querySelector('.site-header__sitenav-toggler');
 const elSitenavTogglerClose = elSiteHeader.querySelector('.sitenav-menu__close');
@@ -14,6 +38,7 @@ if (elSitenavToggler) {
     elSitenavToggler.addEventListener('click', function () {
         elSitenavToggler.classList.toggle(modifiers.sitenavActive);
         elSiteHeader.classList.add(modifiers.siteHeaderActive);
+        document.body.style.overflow = 'hidden'
     })
 }
 
@@ -21,6 +46,7 @@ if (elSitenavTogglerClose) {
     elSitenavTogglerClose.addEventListener('click', function () {
         elSitenavToggler.classList.toggle(modifiers.sitenavActive);
         elSiteHeader.classList.remove(modifiers.siteHeaderActive);
+        document.body.style.overflow = ''
     })
 }
 
@@ -46,6 +72,7 @@ function deactivateTabsPanel () {
 function closeAccordionItems () {
     elsAccordionItem.forEach(function (elAccordionItem) {
         elAccordionItem.classList.remove(modifiers.accordionItemOpen);
+        elAccordionItem.querySelector('.accordion__item-content').style.height = 0;
     })
 }
 
@@ -81,6 +108,11 @@ if (elAccordion) {
                 if(elAccordionItem === evt.target.closest('.accordion__item')) {
                     !elAccordionItem.classList.contains(modifiers.accordionItemOpen) && closeAccordionItems();
                     elAccordionItem.classList.toggle(modifiers.accordionItemOpen);
+                    if(elAccordionItem.classList.contains(modifiers.accordionItemOpen)) {
+                        elAccordionItem.querySelector('.accordion__item-content').style.height = `${elAccordionItem.querySelector('.accordion__item-content').scrollHeight}px`
+                    } else {
+                        elAccordionItem.querySelector('.accordion__item-content').style.height = 0
+                    }
                 }
             })
         }
